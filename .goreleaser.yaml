@@ -23,7 +23,7 @@ builds:
       - goos: windows
         goarch: 386
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
     tags:
       - load_wgnt_from_rsrc
@@ -43,7 +43,7 @@ builds:
       - hardfloat
       - softfloat
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
     tags:
       - load_wgnt_from_rsrc
@@ -65,7 +65,7 @@ builds:
       - arm64
       - arm
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
 
   - id: netbird-signal
@@ -79,7 +79,7 @@ builds:
       - arm64
       - arm
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
 
   - id: netbird-relay
@@ -93,7 +93,7 @@ builds:
       - arm64
       - arm
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
 
   - id: netbird-upload
@@ -107,7 +107,7 @@ builds:
       - arm64
       - arm
     ldflags:
-      - -s -w -X github.com/netbirdio/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+      - -s -w -X github.com/bcmmbaga/netbird/version.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
     mod_timestamp: "{{ .CommitTimestamp }}"
 
 universal_binaries:
@@ -148,7 +148,7 @@ nfpms:
       preremove: "release_files/pre_remove.sh"
 dockers:
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-amd64
+      - bcmmbaga/netbird:{{ .Version }}-amd64
     ids:
       - netbird
     goarch: amd64
@@ -163,7 +163,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-arm64v8
     ids:
       - netbird
     goarch: arm64
@@ -178,7 +178,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-arm
+      - bcmmbaga/netbird:{{ .Version }}-arm
     ids:
       - netbird
     goarch: arm
@@ -195,7 +195,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-rootless-amd64
+      - bcmmbaga/netbird:{{ .Version }}-rootless-amd64
     ids:
       - netbird
     goarch: amd64
@@ -209,7 +209,7 @@ dockers:
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-rootless-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
     ids:
       - netbird
     goarch: arm64
@@ -223,7 +223,7 @@ dockers:
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/netbird:{{ .Version }}-rootless-arm
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm
     ids:
       - netbird
     goarch: arm
@@ -239,7 +239,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
-      - netbirdio/relay:{{ .Version }}-amd64
+      - bcmmbaga/relay:{{ .Version }}-amd64
     ids:
       - netbird-relay
     goarch: amd64
@@ -254,7 +254,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/relay:{{ .Version }}-arm64v8
+      - bcmmbaga/relay:{{ .Version }}-arm64v8
     ids:
       - netbird-relay
     goarch: arm64
@@ -269,7 +269,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/relay:{{ .Version }}-arm
+      - bcmmbaga/relay:{{ .Version }}-arm
     ids:
       - netbird-relay
     goarch: arm
@@ -285,7 +285,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/signal:{{ .Version }}-amd64
+      - bcmmbaga/signal:{{ .Version }}-amd64
     ids:
       - netbird-signal
     goarch: amd64
@@ -300,7 +300,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/signal:{{ .Version }}-arm64v8
+      - bcmmbaga/signal:{{ .Version }}-arm64v8
     ids:
       - netbird-signal
     goarch: arm64
@@ -315,7 +315,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/signal:{{ .Version }}-arm
+      - bcmmbaga/signal:{{ .Version }}-arm
     ids:
       - netbird-signal
     goarch: arm
@@ -331,7 +331,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/management:{{ .Version }}-amd64
+      - bcmmbaga/management:{{ .Version }}-amd64
     ids:
       - netbird-mgmt
     goarch: amd64
@@ -346,7 +346,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/management:{{ .Version }}-arm64v8
+      - bcmmbaga/management:{{ .Version }}-arm64v8
     ids:
       - netbird-mgmt
     goarch: arm64
@@ -361,7 +361,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/management:{{ .Version }}-arm
+      - bcmmbaga/management:{{ .Version }}-arm
     ids:
       - netbird-mgmt
     goarch: arm
@@ -377,7 +377,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/management:{{ .Version }}-debug-amd64
+      - bcmmbaga/management:{{ .Version }}-debug-amd64
     ids:
       - netbird-mgmt
     goarch: amd64
@@ -392,7 +392,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/management:{{ .Version }}-debug-arm64v8
+      - bcmmbaga/management:{{ .Version }}-debug-arm64v8
     ids:
       - netbird-mgmt
     goarch: arm64
@@ -408,7 +408,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
-      - netbirdio/management:{{ .Version }}-debug-arm
+      - bcmmbaga/management:{{ .Version }}-debug-arm
     ids:
       - netbird-mgmt
     goarch: arm
@@ -424,7 +424,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/upload:{{ .Version }}-amd64
+      - bcmmbaga/upload:{{ .Version }}-amd64
     ids:
       - netbird-upload
     goarch: amd64
@@ -439,7 +439,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/upload:{{ .Version }}-arm64v8
+      - bcmmbaga/upload:{{ .Version }}-arm64v8
     ids:
       - netbird-upload
     goarch: arm64
@@ -454,7 +454,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
-      - netbirdio/upload:{{ .Version }}-arm
+      - bcmmbaga/upload:{{ .Version }}-arm
     ids:
       - netbird-upload
     goarch: arm
@@ -470,115 +470,83 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=maintainer=dev@netbird.io"
 docker_manifests:
-  - name_template: netbirdio/netbird:{{ .Version }}
+  - name_template: bcmmbaga/netbird:{{ .Version }}
     image_templates:
-      - netbirdio/netbird:{{ .Version }}-arm64v8
-      - netbirdio/netbird:{{ .Version }}-arm
-      - netbirdio/netbird:{{ .Version }}-amd64
+      - bcmmbaga/netbird:{{ .Version }}-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-arm
+      - bcmmbaga/netbird:{{ .Version }}-amd64
 
-  - name_template: netbirdio/netbird:latest
+  - name_template: bcmmbaga/netbird:latest
     image_templates:
-      - netbirdio/netbird:{{ .Version }}-arm64v8
-      - netbirdio/netbird:{{ .Version }}-arm
-      - netbirdio/netbird:{{ .Version }}-amd64
+      - bcmmbaga/netbird:{{ .Version }}-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-arm
+      - bcmmbaga/netbird:{{ .Version }}-amd64
 
-  - name_template: netbirdio/netbird:{{ .Version }}-rootless
+  - name_template: bcmmbaga/netbird:{{ .Version }}-rootless
     image_templates:
-      - netbirdio/netbird:{{ .Version }}-rootless-arm64v8
-      - netbirdio/netbird:{{ .Version }}-rootless-arm
-      - netbirdio/netbird:{{ .Version }}-rootless-amd64
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm
+      - bcmmbaga/netbird:{{ .Version }}-rootless-amd64
 
-  - name_template: netbirdio/netbird:rootless-latest
+  - name_template: bcmmbaga/netbird:rootless-latest
     image_templates:
-      - netbirdio/netbird:{{ .Version }}-rootless-arm64v8
-      - netbirdio/netbird:{{ .Version }}-rootless-arm
-      - netbirdio/netbird:{{ .Version }}-rootless-amd64
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
+      - bcmmbaga/netbird:{{ .Version }}-rootless-arm
+      - bcmmbaga/netbird:{{ .Version }}-rootless-amd64
 
-  - name_template: netbirdio/relay:{{ .Version }}
+  - name_template: bcmmbaga/relay:{{ .Version }}
     image_templates:
-      - netbirdio/relay:{{ .Version }}-arm64v8
-      - netbirdio/relay:{{ .Version }}-arm
-      - netbirdio/relay:{{ .Version }}-amd64
+      - bcmmbaga/relay:{{ .Version }}-arm64v8
+      - bcmmbaga/relay:{{ .Version }}-arm
+      - bcmmbaga/relay:{{ .Version }}-amd64
 
-  - name_template: netbirdio/relay:latest
+  - name_template: bcmmbaga/relay:latest
     image_templates:
-      - netbirdio/relay:{{ .Version }}-arm64v8
-      - netbirdio/relay:{{ .Version }}-arm
-      - netbirdio/relay:{{ .Version }}-amd64
+      - bcmmbaga/relay:{{ .Version }}-arm64v8
+      - bcmmbaga/relay:{{ .Version }}-arm
+      - bcmmbaga/relay:{{ .Version }}-amd64
 
-  - name_template: netbirdio/signal:{{ .Version }}
+  - name_template: bcmmbaga/signal:{{ .Version }}
     image_templates:
-      - netbirdio/signal:{{ .Version }}-arm64v8
-      - netbirdio/signal:{{ .Version }}-arm
-      - netbirdio/signal:{{ .Version }}-amd64
+      - bcmmbaga/signal:{{ .Version }}-arm64v8
+      - bcmmbaga/signal:{{ .Version }}-arm
+      - bcmmbaga/signal:{{ .Version }}-amd64
 
-  - name_template: netbirdio/signal:latest
+  - name_template: bcmmbaga/signal:latest
     image_templates:
-      - netbirdio/signal:{{ .Version }}-arm64v8
-      - netbirdio/signal:{{ .Version }}-arm
-      - netbirdio/signal:{{ .Version }}-amd64
+      - bcmmbaga/signal:{{ .Version }}-arm64v8
+      - bcmmbaga/signal:{{ .Version }}-arm
+      - bcmmbaga/signal:{{ .Version }}-amd64
 
-  - name_template: netbirdio/management:{{ .Version }}
+  - name_template: bcmmbaga/management:{{ .Version }}
     image_templates:
-      - netbirdio/management:{{ .Version }}-arm64v8
-      - netbirdio/management:{{ .Version }}-arm
-      - netbirdio/management:{{ .Version }}-amd64
+      - bcmmbaga/management:{{ .Version }}-arm64v8
+      - bcmmbaga/management:{{ .Version }}-arm
+      - bcmmbaga/management:{{ .Version }}-amd64
 
-  - name_template: netbirdio/management:latest
+  - name_template: bcmmbaga/management:latest
     image_templates:
-      - netbirdio/management:{{ .Version }}-arm64v8
-      - netbirdio/management:{{ .Version }}-arm
-      - netbirdio/management:{{ .Version }}-amd64
+      - bcmmbaga/management:{{ .Version }}-arm64v8
+      - bcmmbaga/management:{{ .Version }}-arm
+      - bcmmbaga/management:{{ .Version }}-amd64
 
-  - name_template: netbirdio/management:debug-latest
+  - name_template: bcmmbaga/management:debug-latest
     image_templates:
-      - netbirdio/management:{{ .Version }}-debug-arm64v8
-      - netbirdio/management:{{ .Version }}-debug-arm
-      - netbirdio/management:{{ .Version }}-debug-amd64
-  - name_template: netbirdio/upload:{{ .Version }}
+      - bcmmbaga/management:{{ .Version }}-debug-arm64v8
+      - bcmmbaga/management:{{ .Version }}-debug-arm
+      - bcmmbaga/management:{{ .Version }}-debug-amd64
+  - name_template: bcmmbaga/upload:{{ .Version }}
     image_templates:
-      - netbirdio/upload:{{ .Version }}-arm64v8
-      - netbirdio/upload:{{ .Version }}-arm
-      - netbirdio/upload:{{ .Version }}-amd64
+      - bcmmbaga/upload:{{ .Version }}-arm64v8
+      - bcmmbaga/upload:{{ .Version }}-arm
+      - bcmmbaga/upload:{{ .Version }}-amd64
 
-  - name_template: netbirdio/upload:latest
+  - name_template: bcmmbaga/upload:latest
     image_templates:
-      - netbirdio/upload:{{ .Version }}-arm64v8
-      - netbirdio/upload:{{ .Version }}-arm
-      - netbirdio/upload:{{ .Version }}-amd64
-brews:
-  - ids:
-      - default
-    repository:
-      owner: netbirdio
-      name: homebrew-tap
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
-    commit_author:
-      name: Netbird
-      email: dev@netbird.io
-    description: Netbird project.
-    download_strategy: CurlDownloadStrategy
-    homepage: https://netbird.io/
-    license: "BSD3"
-    test: |
-      system "#{bin}/{{ .ProjectName	}} version"
+      - bcmmbaga/upload:{{ .Version }}-arm64v8
+      - bcmmbaga/upload:{{ .Version }}-arm
+      - bcmmbaga/upload:{{ .Version }}-amd64
 
-uploads:
-  - name: debian
-    ids:
-      - netbird-deb
-    mode: archive
-    target: https://pkgs.wiretrustee.com/debian/pool/{{ .ArtifactName }};deb.distribution=stable;deb.component=main;deb.architecture={{ if .Arm }}armhf{{ else }}{{ .Arch }}{{ end }};deb.package=
-    username: dev@wiretrustee.com
-    method: PUT
-
-  - name: yum
-    ids:
-      - netbird-rpm
-    mode: archive
-    target: https://pkgs.wiretrustee.com/yum/{{ .Arch }}{{ if .Arm }}{{ .Arm }}{{ end }}
-    username: dev@wiretrustee.com
-    method: PUT
 
 checksum:
   extra_files:
