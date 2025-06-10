@@ -161,7 +161,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-arm64v8
@@ -177,7 +177,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-arm
@@ -195,6 +195,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
@@ -211,6 +212,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
@@ -226,6 +228,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-rootless-arm
@@ -242,6 +245,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
@@ -258,7 +262,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/relay:{{ .Version }}-arm64v8
@@ -274,7 +278,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/relay:{{ .Version }}-arm
@@ -291,7 +295,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-amd64
@@ -307,7 +311,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-arm64v8
@@ -323,7 +327,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-arm
@@ -340,7 +344,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-amd64
@@ -356,7 +360,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-arm64v8
@@ -372,7 +376,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-arm
@@ -389,7 +393,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-debug-amd64
@@ -405,7 +409,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-debug-arm64v8
@@ -421,7 +425,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
 
   - image_templates:
@@ -439,7 +443,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/upload:{{ .Version }}-amd64
@@ -454,7 +458,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/upload:{{ .Version }}-arm64v8
@@ -469,7 +473,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/upload:{{ .Version }}-arm
@@ -485,7 +489,7 @@ dockers:
       - "--label=org.opencontainers.image.title={{.ProjectName}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
-      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source=https://github.com/bcmmbaga/{{.ProjectName}}"
       - "--label=maintainer=dev@netbird.io"
 docker_manifests:
   - name_template: bcmmbaga/netbird:{{ .Version }}
