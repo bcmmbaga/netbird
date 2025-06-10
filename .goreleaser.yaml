@@ -149,6 +149,7 @@ nfpms:
 dockers:
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-amd64
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-amd64
     ids:
       - netbird
     goarch: amd64
@@ -164,6 +165,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-arm64v8
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-arm64v8
     ids:
       - netbird
     goarch: arm64
@@ -179,6 +181,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-arm
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-arm
     ids:
       - netbird
     goarch: arm
@@ -196,6 +199,7 @@ dockers:
 
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-rootless-amd64
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-rootless-amd64
     ids:
       - netbird
     goarch: amd64
@@ -210,6 +214,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-rootless-arm64v8
     ids:
       - netbird
     goarch: arm64
@@ -224,6 +229,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/netbird:{{ .Version }}-rootless-arm
+      - ghcr.io/bcmmbaga/netbird:{{ .Version }}-rootless-arm
     ids:
       - netbird
     goarch: arm
@@ -240,6 +246,7 @@ dockers:
 
   - image_templates:
       - bcmmbaga/relay:{{ .Version }}-amd64
+      - ghcr.io/bcmmbaga/relay:{{ .Version }}-amd64
     ids:
       - netbird-relay
     goarch: amd64
@@ -255,6 +262,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/relay:{{ .Version }}-arm64v8
+      - ghcr.io/bcmmbaga/relay:{{ .Version }}-arm64v8
     ids:
       - netbird-relay
     goarch: arm64
@@ -270,6 +278,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/relay:{{ .Version }}-arm
+      - ghcr.io/bcmmbaga/relay:{{ .Version }}-arm
     ids:
       - netbird-relay
     goarch: arm
@@ -286,6 +295,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-amd64
+      - ghcr.io/bcmmbaga/signal:{{ .Version }}-amd64
     ids:
       - netbird-signal
     goarch: amd64
@@ -301,6 +311,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-arm64v8
+      - ghcr.io/bcmmbaga/signal:{{ .Version }}-arm64v8
     ids:
       - netbird-signal
     goarch: arm64
@@ -316,6 +327,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/signal:{{ .Version }}-arm
+      - ghcr.io/bcmmbaga/signal:{{ .Version }}-arm
     ids:
       - netbird-signal
     goarch: arm
@@ -332,6 +344,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-amd64
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-amd64
     ids:
       - netbird-mgmt
     goarch: amd64
@@ -347,6 +360,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-arm64v8
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-arm64v8
     ids:
       - netbird-mgmt
     goarch: arm64
@@ -362,6 +376,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-arm
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-arm
     ids:
       - netbird-mgmt
     goarch: arm
@@ -378,6 +393,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-debug-amd64
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-debug-amd64
     ids:
       - netbird-mgmt
     goarch: amd64
@@ -393,6 +409,7 @@ dockers:
       - "--label=maintainer=dev@netbird.io"
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-debug-arm64v8
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-debug-arm64v8
     ids:
       - netbird-mgmt
     goarch: arm64
@@ -409,6 +426,7 @@ dockers:
 
   - image_templates:
       - bcmmbaga/management:{{ .Version }}-debug-arm
+      - ghcr.io/bcmmbaga/management:{{ .Version }}-debug-arm
     ids:
       - netbird-mgmt
     goarch: arm
